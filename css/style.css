@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat|Poppins|Sniglet&display=swap');
+*{
+    box-sizing: border-box; 
+    /* allows you to include padding and border to an element's total width and height*/
+}
+
+header,
+section{
+    overflow-x: hidden;
+
+}
+
+:root{
+    --Poppins-font:"Poppins",cursive;
+    --Lobster:"Lobster Two",cursive;
+    --Montserrat:"Montserrat",cursive;
+    --Sniglet:"Sniglet",cursive;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(
+        to bottom,
+        #dd2476,#ff512f);
+        --light-gray:rgba(255,255,255 0.3);
+    
+
+}
+
+.section-1{
+    background-color: #FFDD00;
+}
+img {
+    display: block;
+    width: 100vh;
+    height: auto;
+    
+  }
