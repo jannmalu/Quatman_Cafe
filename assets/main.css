@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat|Poppins|Sniglet&display=swap');
+*{
+    box-sizing: border-box;
+}
+section{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+:root{
+    --Poppins-font:"Poppins",cursive;
+    --Lobster:"Lobster Two",cursive;
+    --Montserrat:"Montserrat",cursive;
+    --Sniglet:"Sniglet",cursive;
+    --Kaushan-Script:"Kaushan Script",cursive;
+    --Zilla-slab: 'Zilla Slab', serif;
+    --Courgette: 'Courgette', cursive;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(
+        to bottom,
+        #dd2476,#ff512f);
+        --light-gray:rgba(255,255,255 0.3);
+}
+.first-section{
+    background-color:#FFDD00;
+}
+.first-section .col-md-3 img{
+    display: block;
+    width:100vh;
+    height:auto;
+}
+/* span:before{
+    content: '';
+    animation: animate infinite 15s;
+    color: black;
+    padding:2px;
+}
+@keyframes animate{
+    0%{
+        content: 'Burgers';
+    }
+    20%{
+        content: 'Pizzas';
+    }
+    40%{
+        content: 'Cocktails';
+    }
+    60%{
+        content: 'Chicken Wings';
+    }
+    80%{
+        content: 'French Fries';
+    }
+    100%{
+        content: 'Salads';
+    }
+
+} */

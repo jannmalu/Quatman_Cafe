@@ -1,35 +1,176 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat|Poppins|Sniglet&display=swap');
-*{
-    box-sizing: border-box; 
+
+* {
+    box-sizing: border-box;
     /* allows you to include padding and border to an element's total width and height*/
 }
 
-header,
-section{
+
+section {
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+:root {
+    --Poppins-font: "Poppins", cursive;
+    --Lobster: "Lobster Two", cursive;
+    --Montserrat: "Montserrat", cursive;
+    --Sniglet: "Sniglet", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom,
+            #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255 0.3);
+
 
 }
 
-:root{
-    --Poppins-font:"Poppins",cursive;
-    --Lobster:"Lobster Two",cursive;
-    --Montserrat:"Montserrat",cursive;
-    --Sniglet:"Sniglet",cursive;
-    --light-black:#2e2c2caf;
-    --bggradient:linear-gradient(
-        to bottom,
-        #dd2476,#ff512f);
-        --light-gray:rgba(255,255,255 0.3);
-    
+/* section 1 */
 
+.section-1 {
+    background-color: #036016;
 }
 
-.section-1{
-    background-color: #FFDD00;
-}
-img {
+.section-1 .container-fluid img {
     display: block;
     width: 100vh;
     height: auto;
-    
-  }
+
+}
+
+.section-1 .container-fluid {
+    height: 600px;
+}
+
+.section-1 .col-md-7 h1 {
+    padding-top: 89px;
+    padding-left: 18px;
+    font-size: 3em;
+    color: whitesmoke;
+}
+
+.section-1 .col-md-7 p {
+    font-size: 1.4em;
+    padding-left: 18px;
+    color: whitesmoke;
+}
+
+
+.section-1 .col-md-7 .input-group {
+    padding-left: 18px;
+    width: 564px;
+
+
+}
+
+.section-1 .col-md-7 .input-group button {
+    background: black;
+    border-radius: 0px;
+}
+
+.section-1 .col-md-7 .input-group input {
+    border-radius: 0px;
+    height: 43px;
+
+}
+
+
+/* navbar */
+
+.section-1 .nav-item2 {
+    width: 5.6em;
+
+    text-align: center;
+    background: black;
+
+}
+
+.nav li a {
+    color: white;
+    font-weight: 600;
+}
+
+.my-navbar {
+    padding-top: 40px;
+}
+
+.navbar-brand {
+    font-weight: lighter;
+}
+
+.section-2 .col-md-3 {
+    padding: 18px;
+
+}
+
+
+.section-2 .col-md-3 img {
+    padding: 85px;
+}
+
+.section-2 .col-md-3 .card {
+    width: 290px;
+    height: 290px;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.section-3 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+    padding: 8px;
+    height: 70vh;
+}
+
+.section-3 .row .col-md-6:last-child {
+    position: relative;
+
+}
+
+.section-3 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+
+
+}
+
+span:before {
+    content: '';
+    animation: animate infinite 15s;
+    color: black;
+    padding: 2px;
+}
+
+@keyframes animate {
+    0% {
+        content: 'Burgers';
+    }
+
+    20% {
+        content: 'Pizzas';
+    }
+
+    40% {
+        content: 'Cocktails';
+    }
+
+    60% {
+        content: 'Chicken Wings';
+    }
+
+    80% {
+        content: 'French Fries';
+    }
+
+    100% {
+        content: 'Salads';
+    }
+
+}
