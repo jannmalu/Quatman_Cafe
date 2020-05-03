@@ -113,8 +113,33 @@ section {
     box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
 
 }
-
-
+.section-2 .col-md-3 .card, .card-overlay{
+    text-align: center;
+}
+.section-2 .col-md-3 .card .card-overlay{
+    padding:40px;
+    text-justify: justify;
+}
+.section-2 .col-md-3 .card img, .card-overlay{
+    transition: 0.4s all;
+}
+.section-2 .col-md-3 .card .card-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background:rgb(68, 136, 68);
+    color: whitesmoke;
+    opacity: 0;
+}
+.section-2 .col-md-3 .card .card-overlay:hover{
+    opacity: 1;
+}
+.section-2 .col-md-3 .card img:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
 .section-3 .row .col-md-6 .pray img {
     opacity: 0.8;
     width: 80%;
