@@ -199,3 +199,34 @@ span:before {
     }
 
 }
+.section-5 .footer{
+    background: #232b23;
+    color:whitesmoke;
+}
+.section-5 .footer .links ul{
+    list-style-type: none;
+}
+.section-5 .footer .links li a{
+    color: whitesmoke;
+    transition: color .2s;
+}
+.section-5 .footer .links li a:hover{
+    text-decoration: none;
+    color:rgb(73, 133, 73);
+}
+.section-5 .footer .about-company i{
+    font-size: 25px;
+    padding:5px;
+}
+.section-5 .footer .about-company a{
+    color: whitesmoke;
+    transition: color .2s;
+}
+.section-5 .footer .about-company a:hover{
+    color: rgb(68, 136, 68);
+}
+.section-5 .footer .copyright p{
+    border-top: 1px solid rgba(255, 255, 255 1);
+    font-size: 1em;
+    text-align: center;
+}
