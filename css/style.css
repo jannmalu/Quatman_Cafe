@@ -24,6 +24,35 @@ section {
 
 }
 
+/* navbar */
+
+.section-1 .nav-item2 {
+    width: 5.6em;
+
+    text-align: center;
+    background: black;
+
+}
+
+.nav li a {
+    color: white;
+    font-weight: 600;
+}
+
+.my-navbar {
+    padding-top: 40px;
+}
+
+.navbar-brand {
+    font-weight: lighter;
+}
+
+.section-2 .col-md-3 {
+    padding: 18px;
+
+}
+
+
 /* section 1 */
 
 .section-1 {
@@ -72,36 +101,6 @@ section {
     height: 43px;
 
 }
-
-
-/* navbar */
-
-.section-1 .nav-item2 {
-    width: 5.6em;
-
-    text-align: center;
-    background: black;
-
-}
-
-.nav li a {
-    color: white;
-    font-weight: 600;
-}
-
-.my-navbar {
-    padding-top: 40px;
-}
-
-.navbar-brand {
-    font-weight: lighter;
-}
-
-.section-2 .col-md-3 {
-    padding: 18px;
-
-}
-
 
 .section-2 .col-md-3 img {
     padding: 85px;
