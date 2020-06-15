@@ -3,94 +3,143 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="animate.min.css">
+  <!-- <link rel="stylesheet" href="animate.min.css"> -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/foodmenu.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/f5828f1ca5.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Quatman Cafe</title>
-  <body style="background-color: rgb(235, 233, 233);">
+  <!-- <body style="background-color: rgb(235, 233, 233);"> -->
 
 <div class="w3-container">
-  <section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-        <a href="#!">Logo</a>
-      </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <!-- <ul class="nav-list">
-          <li>
-            <a href="#!">Home</a>
-          </li>
-          <li>
-            <a href="#!">About</a>
-          </li>
-          <li>
-            <a href="#!">Services</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="#!">Web Design</a>
-              </li>
-              <li>
-                <a href="#!">Web Development</a>
-              </li>
-              <li>
-                <a href="#!">Graphic Design</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">Pricing</a>
-          </li>
-          <li>
-            <a href="#!">Portfolio</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="#!">Web Design</a>
-              </li>
-              <li>
-                <a href="#!">Web Development</a>
-              </li>
-              <li>
-                <a href="#!">Graphic Design</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">Contact</a>
-          </li>
-        </ul> -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand ml-auto" style="padding-left: 125px;" href="index.html">Quatman Cafe</a>
+        <div class="shopping_cart ml-auto">
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#shoppingCart">
+                <span class="cart-icon"><i class="fas fa-shopping-cart" style="color: white;"></i></span>
+            </button>
+            <!--Shopping Cart Modal-->
+            <div class="modal fade" id="shoppingCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content">
+                        <!--The Form-->
+                        <form action="#" method="POST">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class ="modal-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>  
       </nav>
-    </div>
-  </section>
   
 
   
   
   <div class="w3-bar w3-black">
-    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Meat')">Meat</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Cocktails & Beverages')">Cocktails & Beverages</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Pizzas')">Pizzas</button>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Meat')">Meat</button>
+        </li>
+        <li class="nav-item">
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Cocktails & Beverages')">Cocktails & Beverages</button>
+        </li>
+        <li class="nav-item">
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Pizzas')">Pizzas</button>
+        </li>
+      </ul>
   </div>
   
   <div id="Meat" class="w3-container w3-border city">
 
     
-    <h2>Meat</h2>
+    <h2 class="text-center">Meat</h2>
     <div id="supper" class="container "><br>
                 
 
       <div class="row">
           <div class="col-md-6">
               <div class="single_menu">
-                  <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
+                  <img src="../assets/img/chicken_burger.jpg" alt="burger">
                   <div class="menu_content">
                       <h4>Chicken Burger <span>1124</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="burger-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                            <div class ="modal-body">
+                                                <div class="food-description">
+                                                    <img src="../assets/img/burger-3442206_1920.jpg" class="burger-img" alt="burger">
+                                                    <h3 class="text-center">CHICKEN BURGER</h3>
+                                                    <p class="text-justify">Buttermilk-fried, organic chicken breast, blue cheese sauce,
+                                                        green leaf, and buffalo sauce on a brioche bun.</p>
+                                                </div>
+                                                <div class="food-substitutions">
+                                                    <h6 class="text-left">IF ITEM IS UNAVAILABLE</h6>
+                                                    <div class="food-options text-left">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="recommendation" id="recommendation" value="RECOMMENDED" checked>
+                                                            <label class="form-check-label" for="recommendation">
+                                                              Substitute with restaurant recommendation
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="remove" id="remove" value="REVOMED" >
+                                                            <label class="form-check-label" for="remove">
+                                                              Remove Item
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="cancel" id="cancel" value="Canceled" >
+                                                            <label class="form-check-label" for="cancel">
+                                                              Cancel entire order
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div class="quantity-tab d-flex justify-content-center">
+                                                    <select class="form-control text-center" id="quantity-select">
+                                                        <option selected>Quantity</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                      </select>                                                  
+                                                </div>
+                                                <h5 class="text-center">PRICE: 1124</h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mx-auto d-block">Checkout</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
@@ -99,63 +148,301 @@
                       <h4>Black coffee <span>1020</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                  <div class="menu_content">
-                      <h4>Fried Rice <span>1045</span></h4>
-                      <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
-                          facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
-                  </div>
-              </div>
+                <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
+                <div class="menu_content">
+                    <h4>Fried Rice <span>1045</span></h4>
+                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
+                        facilis.</p>
+                        <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="burger-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                            <div class ="modal-body">
+                                                <div class="food-description">
+                                                    <img src="../assets/img/burger-3442206_1920.jpg" class="burger-img" alt="burger">
+                                                    <h3 class="text-center">CHICKEN BURGER</h3>
+                                                    <p class="text-justify">Buttermilk-fried, organic chicken breast, blue cheese sauce,
+                                                        green leaf, and buffalo sauce on a brioche bun.</p>
+                                                </div>
+                                                <div class="food-substitutions">
+                                                    <h6 class="text-left">IF ITEM IS UNAVAILABLE</h6>
+                                                    <div class="food-options text-left">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="recommendation" id="recommendation" value="RECOMMENDED" checked>
+                                                            <label class="form-check-label" for="recommendation">
+                                                              Substitute with restaurant recommendation
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="remove" id="remove" value="REVOMED" >
+                                                            <label class="form-check-label" for="remove">
+                                                              Remove Item
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="cancel" id="cancel" value="Canceled" >
+                                                            <label class="form-check-label" for="cancel">
+                                                              Cancel entire order
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div class="quantity-tab d-flex justify-content-center">
+                                                    <select class="form-control text-center" id="quantity-select">
+                                                        <option selected>Quantity</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                      </select>                                                  
+                                                </div>
+                                                <h5 class="text-center">PRICE: 1124</h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mx-auto d-block">Checkout</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
+                </div>
+            </div>
               <div class="single_menu">
                   <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
                   <div class="menu_content">
                       <h4>meat <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
           </div>
           <div class="col-md-6">
               <div class="single_menu">
-                  <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
+                  <img src="../assets/img/chicken_burger.jpg" alt="burger">
                   <div class="menu_content">
                       <h4>Chicken Burger <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
+                  <img src="../assets/img/chicken_burger.jpg" alt="black coffee">
                   <div class="menu_content">
                       <h4>Black coffee <span>1020</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
+                  <img src="../assets/img/fried_rice.jpg" alt="fried rice">
                   <div class="menu_content">
                       <h4>Fried Rice <span>1045</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
+                  <img src="../assets/img/meat.jpg" alt="meat">
                   <div class="menu_content">
                       <h4>meat <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
 
               </div>
@@ -167,84 +454,324 @@
   </div>
 
   <div id="Cocktails & Beverages" class="w3-container w3-border city" style="display:none">
-    <h2>Cocktails & Beverages</h2>
+    <h2 class="text-center">Cocktails & Beverages</h2>
     <div id="supper" class="container "><br>
                 
 
       <div class="row">
           <div class="col-md-6">
               <div class="single_menu">
-                  <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
+                  <img src="../assets/img/cocktail2.jpg" alt="burger">
                   <div class="menu_content">
-                      <h4>Chicken Burger <span>1024</span></h4>
+                      <h4>Mojito <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
+                  <img src="../assets/img/cocktail.jpg" alt="black coffee">
                   <div class="menu_content">
-                      <h4>Black coffee <span>1020</span></h4>
+                      <h4>Lemon Ginger Ale <span>1020</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
+                  <img src="../assets/img/cocktail3.jpg" alt="fried rice">
                   <div class="menu_content">
                       <h4>Fried Rice <span>1045</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
+                  <img src="../assets/img/meat.jpg" alt="meat">
                   <div class="menu_content">
                       <h4>meat <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
           </div>
           <div class="col-md-6">
               <div class="single_menu">
-                  <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
+                  <img src="../assets/img/chicken_burger.jpg" alt="burger">
                   <div class="menu_content">
                       <h4>Chicken Burger <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
+                  <img src="../assets/img/black_coffee.jpg" alt="black coffee">
                   <div class="menu_content">
                       <h4>Black coffee <span>1020</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
+                  <img src="../assets/img/fried_rice.jpg" alt="fried rice">
                   <div class="menu_content">
                       <h4>Fried Rice <span>1045</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
-                  </div>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
+                    </div>
               </div>
               <div class="single_menu">
-                  <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
+                  <img src="../assets/img/meat.jpg" alt="meat">
                   <div class="menu_content">
                       <h4>meat <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
 
               </div>
@@ -254,7 +781,7 @@
   </div>
 
   <div id="Pizzas" class="w3-container w3-border city" style="display:none">
-    <h2>Pizzas</h2>
+    <h2 class="text-center">Pizzas</h2>
     <div id="supper" class="container "><br>
                 
 
@@ -263,10 +790,40 @@
               <div class="single_menu">
                   <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
                   <div class="menu_content">
-                      <h4>Chicken Burger <span>1024</span></h4>
+                      <h4>Chicken Burger <span>900</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
@@ -275,7 +832,37 @@
                       <h4>Black coffee <span>1020</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
@@ -284,7 +871,37 @@
                       <h4>Fried Rice <span>1045</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
@@ -293,7 +910,37 @@
                       <h4>meat <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
           </div>
@@ -304,7 +951,37 @@
                       <h4>Chicken Burger <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
@@ -313,7 +990,37 @@
                       <h4>Black coffee <span>1020</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
@@ -322,7 +1029,37 @@
                       <h4>Fried Rice <span>1045</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
               </div>
               <div class="single_menu">
@@ -331,7 +1068,37 @@
                       <h4>meat <span>1024</span></h4>
                       <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                           facilis.</p>
-                      <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+                          <div class="carticon text-right">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#burger-modal">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                            <!--Shopping Cart Modal-->
+                            <div class="modal fade" id="cart-shop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <!--The Form-->
+                                        <form action="#" method="POST">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">My Cart</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class ="modal-body">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque in nulla accusamus 
+                                                    animi dolore accusantium veniam sit adipisci dicta corrupti ipsum et, vero 
+                                                    veritatis dolor, doloribus ea, exercitationem dignissimos velit?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore veritatis
+                                                    nisi velit, sunt doloremque officia sit id iste eum ipsam error recusandae 
+                                                    asperiores necessitatibus aut cupiditate optio eaque. Reprehenderit!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" name="save" class="btn btn-default mr-auto">Checkout</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                          </div>
                   </div>
 
               </div>

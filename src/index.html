@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="animate.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f5828f1ca5.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
     <title>Quatman Cafe</title>
 
 </head>
@@ -25,20 +25,89 @@
                     <div class="col-md-7 col-sm-12">
 
                         <nav class=" my-navbar navbar navbar-dark navbar-expand-lg  ">
-                            <a class="navbar-brand" href="#!">Quatman</a>
+                            <a class="navbar-brand" href="#!">Quatman Cafe</a>
                             <ul class="nav  navbar-right ml-auto">
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Login</a>
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#userLogin">Login</button>
+
+                                    <!--Login Modal-->
+                                    <div class="modal fade" id="userLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog " role="document">
+                                            <div class="modal-content">
+                                                <!--The Form-->
+                                                <form action="#" method="POST">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title pull-left" id="myModalLabel">Login</h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class ="modal-body">
+                                                        <div class="form-group">
+                                                            <label>Email Address</label>
+                                                            <input type="text" class="form-control" name="#" placeholder="Email Address" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Password</label>
+                                                            <input type="password" class="form-control" name="#" placeholder="Password" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" name="save" class="btn btn-default mr-auto">Login</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
                                 </li>
                                 <li class="nav-item2">
-                                    <a class="nav-link" href=".container-demo">Signup</a>
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#userSignin">Sign Up</button>
+
+                                    <!--Sign Up Modal-->
+                                    <div class="modal fade" id="userSignin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog " role="document">
+                                            <div class="modal-content">
+                                                <!--The Form-->
+                                                <form action="#" method="POST">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title" id="myModalLabel">Create Account</h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class ="modal-body">
+                                                        <div class="form-group">
+                                                            <label>First Name</label>
+                                                            <input type="text" class="form-control" name="#" placeholder="First Name" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Last Name</label>
+                                                            <input type="text" class="form-control" name="#" placeholder="Last Name" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Email Address</label>
+                                                            <input type="text" class="form-control" name="#" placeholder="Email Address" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Password</label>
+                                                            <input type="text" class="form-control" name="#" placeholder="Password" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Confirm Password</label>
+                                                            <input type="text" class="form-control" name="#" placeholder="Confirm Password" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" name="save" class="btn btn-default mr-auto">Sign In</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
                                 </li>
                             </ul>
                         </nav>
 
-                        <h1>Want some <span id="banner" class="animated infinite bounce delay-2s"></span> </h1>
-
+                        <h1>Want some <span class="food_items"></span> </h1>
                         <p>Burgers, smoothies and sandwiches available for delivery</p>
                         <div class="input-group">
                             <input type="text" placeholder="ENTER YOUR LOCATION" class="form-control" placeholder=""
@@ -77,9 +146,6 @@
                                         atque vero modi inventore nobis unde voluptate delectus repellendus 
                                         quos dolores eveniet nihil?</h6>
                                 </div>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                       -->
                             </div>
                         </div>
 
@@ -97,9 +163,6 @@
                                             atque vero modi inventore nobis unde voluptate delectus repellendus 
                                             quos dolores eveniet nihil?</h6>
                                     </div>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div> -->
                             </div>
                         </div>
 
@@ -116,9 +179,6 @@
                                         atque vero modi inventore nobis unde voluptate delectus repellendus 
                                         quos dolores eveniet nihil?</h6>
                                 </div>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div> -->
                             </div>
                         </div>
 
@@ -134,9 +194,6 @@
                                         atque vero modi inventore nobis unde voluptate delectus repellendus 
                                         quos dolores eveniet nihil?</h6>
                                 </div>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div> -->
                             </div>
                         </div>
 
@@ -235,8 +292,8 @@
                                             <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed"
                                                 data-toggle="collapse" href="#collapseContent" aria-expanded="false"
                                                 aria-controls="collapseContent"></a>
-                                            <i class="fas fa-share-alt text-muted float-right p-1 my-1"
-                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                                            <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1"
+                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i> -->
                                               <i class="fas fa-shopping-cart text-muted float-right p-1 my-1 mr-3"
                                                 data-toggle="tooltip" data-placement="top" title="Add to cart"></i>
 
@@ -291,8 +348,8 @@
                                             <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed"
                                                 data-toggle="collapse" href="#collapseContent" aria-expanded="false"
                                                 aria-controls="collapseContent"></a>
-                                            <i class="fas fa-share-alt text-muted float-right p-1 my-1"
-                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                                            <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1"
+                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i> -->
                                               <i class="fas fa-shopping-cart text-muted float-right p-1 my-1 mr-3"
                                                 data-toggle="tooltip" data-placement="top" title="Add to cart"></i>
 
@@ -347,8 +404,8 @@
                                             <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed"
                                                 data-toggle="collapse" href="#collapseContent" aria-expanded="false"
                                                 aria-controls="collapseContent"></a>
-                                            <i class="fas fa-share-alt text-muted float-right p-1 my-1"
-                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                                            <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1"
+                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i> -->
                                               <i class="fas fa-shopping-cart text-muted float-right p-1 my-1 mr-3"
                                                 data-toggle="tooltip" data-placement="top" title="Add to cart"></i>
 
@@ -410,8 +467,8 @@
                                             <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed"
                                                 data-toggle="collapse" href="#collapseContent" aria-expanded="false"
                                                 aria-controls="collapseContent"></a>
-                                            <i class="fas fa-share-alt text-muted float-right p-1 my-1"
-                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                                            <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1"
+                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i> -->
                                                 
                                             <i class="fas fa-shopping-cart text-muted float-right p-1 my-1 mr-3"
                                                 data-toggle="tooltip" data-placement="top" title="Add to cart"></i>
@@ -468,8 +525,8 @@
                                             <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed"
                                                 data-toggle="collapse" href="#collapseContent" aria-expanded="false"
                                                 aria-controls="collapseContent"></a>
-                                            <i class="fas fa-share-alt text-muted float-right p-1 my-1"
-                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                                            <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1"
+                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i> -->
                                               <i class="fas fa-shopping-cart text-muted float-right p-1 my-1 mr-3"
                                                 data-toggle="tooltip" data-placement="top" title="Add to cart"></i>
 
@@ -525,8 +582,8 @@
                                             <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed"
                                                 data-toggle="collapse" href="#collapseContent" aria-expanded="false"
                                                 aria-controls="collapseContent"></a>
-                                            <i class="fas fa-share-alt text-muted float-right p-1 my-1"
-                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                                            <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1"
+                                                data-toggle="tooltip" data-placement="top" title="Share this post"></i> -->
                                               <i class="fas fa-shopping-cart text-muted float-right p-1 my-1 mr-3"
                                                 data-toggle="tooltip" data-placement="top" title="Add to cart"></i>
 
@@ -584,55 +641,7 @@
                     </div>
                 </div>
             </div>
-           <!-- container -->
-            <!-- <footer class="footer-area footer-dark">
-                <div class="container-fluid p-0">
-                    <div class="row text-left">
-                        <div class="col-md-5 col-md-5">
-                            <h1 class="text-light">About Us</h1>
-                            <p class="text-header">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo aut non
-                                nisi alias ratione atque natus reprehenderit vel quo?
-                            </p>
-                            <p class="pt-4 text-muted">
-                                Copyright @2019 All rights reserved Lorem ipsum dolor sit amet consectetur.
-                                <span>Trevor Saudi</span>
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <h4 class="text-light">Newsletter</h4>
-                            <p class="text-muted">Stay Updated</p>
-                            <form class="form-inline">
-                                <div class="col pl-">
-                                    <div class="input-group pr-5">
-                                        <input type="text" class="form-control bg-dark text-white" placeholder="Email">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">
-                                                <i class="fas fa-arrow-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-2 col-sm-12">
-                            <h4 class="text-light">Follow us</h4>
-                            <p class="text-muted">Let us be social</p>
-                            <div class="column">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-            </footer>
-
-
         </section>
-
     </main>
 </body>
 
