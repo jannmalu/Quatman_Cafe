@@ -28,23 +28,41 @@ section {
 
 .section-1 .nav-item2 {
     width: 5.6em;
-
-    text-align: center;
     background: black;
 
 }
-
-.nav li a {
-    color: white;
+.nav .nav-item button{
+    color:white;
     font-weight: 600;
 }
-
+.nav .nav-item2 button{
+    color:white;
+    font-weight: 600;
+}
+.nav .nav-item button:focus{
+    box-shadow: none;
+}
+.nav .nav-item2 button:focus{
+    box-shadow: none;
+}
 .my-navbar {
     padding-top: 40px;
 }
 
 .navbar-brand {
     font-weight: lighter;
+    font-family: var(--Poppins-font);
+    font-size: 1.5em;
+}
+.nav .nav-item .modal-content .modal-footer button{
+    background-color: green;
+    color: white;
+    
+}
+
+.nav .nav-item2 .modal-content .modal-footer button{
+    background-color: green;
+    color: white;
 }
 
 .section-2 .col-md-3 {
@@ -165,7 +183,7 @@ section {
 
 }
 
-span:before {
+.food_items:before {
     content: '';
     animation: animate infinite 15s;
     color: black;
@@ -228,4 +246,336 @@ span:before {
     border-top: 1px solid rgba(255, 255, 255 1);
     font-size: 1em;
     text-align: center;
+}
+/**/
+.collapse-content .fa.fa-heart:hover {
+    color: rgb(68, 136, 68) !important;
+  }
+  .collapse-content .fa.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }
+.w3-container .navbar{
+    background-color: rgb(235, 233, 233)!important;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.section-title p {
+	font-size: 24px;
+	font-family: Oleo Script;
+	margin-bottom: 0px;
+}
+.section-title h4 {
+	font-size: 40px;
+	text-transform: capitalize;
+	color: #FF5E18;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 25px;
+}
+.section-title h4::before {
+	width: 80px;
+	height: 1.5px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+.section-title h4::before, .section-title h4::after {
+	position: absolute;
+	content: "";
+	background-color:rgb(68, 136, 68);
+}
+#myTabContent {
+	margin-top: 50px;
+}
+.menu_tab {
+	width: auto;
+	margin: 0 auto;
+}
+.nav-tabs .nav-item {
+	margin-bottom: -1px;
+}
+.nav-item a {
+	color: #333;
+}
+.menu_tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: white;
+	background-color:rgb(68, 136, 68);
+	border-color: rgb(68, 136, 68);
+}
+
+
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+.section-title p {
+	font-size: 24px;
+	font-family: Oleo Script;
+	margin-bottom: 0px;
+}
+.section-title h4 {
+	font-size: 40px;
+	text-transform: capitalize;
+	color: rgb(68, 136, 68);
+	position: relative;
+	display: inline-block;
+	padding-bottom: 25px;
+}
+.section-title h4::before {
+	width: 80px;
+	height: 1.5px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+.section-title h4::before, .section-title h4::after {
+	position: absolute;
+	content: "";
+	background-color: rgb(68, 136, 68);
+}
+#myTabContent {
+	margin-top: 50px;
+}
+.menu_tab {
+	width: auto;
+	margin: 0 auto;
+}
+.nav-tabs .nav-item {
+	margin-bottom: -1px;
+}
+.nav-item a {
+	color: #333;
+}
+.menu_tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: white;
+	background-color: rgb(68, 136, 68);
+	border-color: rgb(68, 136, 68);
+}
+/* .card-columns{
+    column-count: 2;
+} */
+.page_title {
+    padding: 30px 0px;
+}
+
+.page_title h1 {
+    color: rgb(68, 136, 68);
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: capitalize;
+}
+.page_title h1::before {
+    background: rgb(68, 136, 68);
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page_title h1::after {
+    position: absolute;
+    content: '';
+    background: rgb(68, 136, 68);
+    width: 30px;
+    height: 2px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Menu starts*/
+.menu_tab {
+    margin: 0 auto;
+    justify-content: center;
+}
+.nav-item {
+    display: inline-block;
+    text-align: center;
+}
+.nav-tabs .nav-link{
+    transition: .3s;
+}
+.nav-tabs .nav-link.active {
+    background: rgb(68, 136, 68);
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid rgb(68, 136, 68);
+    text-transform: capitalize;
+}
+.nav-link {
+    color: #000;
+}
+.nav-tabs .nav-link:hover {
+    background: rgb(68, 136, 68);
+    color: #fff;
+    border: 1px solidrgb(68, 136, 68);
+}
+.single_menu {
+    position: relative;
+    margin-bottom: 75px;
+    transition: .3s;
+}
+.single_menu:hover img{
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+
+}
+.single_menu img {
+    width: 33%;
+    position: absolute;
+    height: 140px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    transition: .3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.menu_content {
+    padding-left: 200px;
+}
+.menu_content h4 {
+    font-size: 25px;
+    font-weight: 300;
+    border-bottom: 1px solid #232b2b;
+    line-height: 2;
+    text-transform: capitalize;
+}
+.menu_content h4 span {
+    font-size: 25px;
+    font-weight: 800;
+    float: right;
+   
+    color: rgb(68, 136, 68);;
+}
+.menu_content p {
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.menu_btn.btn.btn-danger {
+    margin: 0 auto;
+    display: block;
+    width: 140px;
+}
+/*Menu ends*/
+.menu_btn.btn.btn-danger {
+	margin: 0 auto;
+	display: block;
+	width: 140px;
+}
+.btn.btn-danger {
+	background: rgb(68, 136, 68);
+	border: 1px solid rgb(68, 136, 68);
+	transition: .3s;
+	position: relative;
+	z-index: 1;
+	text-transform: capitalize;
+	font-weight: 700;
+	overflow: hidden;
+	padding: 15px 25px;
+}
+.btn.btn-danger::before {
+	position: absolute;
+	content: '';
+	background: rgb(68, 136, 68);
+	width: 100%;
+	height: 100%;
+	left: -100%;
+	top: 100%;
+	transition: .3s;
+	z-index: -1;
+}
+.btn.btn-danger:hover:before{
+    top: 0;
+    left: 0;
+}
+
+.single_menu h4{
+    text-transform: capitalize;
+}
+
+/* FOOD MENU PAGE */
+
+.w3-container .navbar .shopping_cart .cart-icon{
+    padding-right:40px;
+}
+.w3-container .navbar .shopping_cart button:focus{
+    box-shadow: none;
+}
+.single_menu .menu_content .carticon button:focus{
+    box-shadow: none;
+}
+.single_menu .menu_content .modal .modal-content .modal-body img{
+    position: relative;
+    width:100%;
+    height: auto;
+    padding: 0;
+}
+.single_menu .menu_content .modal .modal-content .modal-body p{
+    font-size: 0.9em;
+    font-family: var(--Montserrat);
+}
+.single_menu .menu_content .modal .modal-content .modal-body h5{
+    padding-top: 20px;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .food-substitutions::before{
+    padding-top: 21px;
+    background-image: linear-gradient(90deg,rgb(172, 168, 168) 25%,rgba(172, 168, 168, 0) 0,rgba(172, 168, 168, 0));
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: 4px 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .food-substitutions{
+    padding: 10px;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .food-substitutions .food-options .form-check{
+    line-height: 2;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .food-substitutions .food-options .form-check input{
+    height: 24px;
+    opacity: 1;
+    width: 24px;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .food-substitutions .food-options .form-check input:checked~label{
+    color: rgb(56, 161, 56);
+}
+.single_menu .menu_content .modal .modal-content .modal-body .food-substitutions .food-options .form-check label{
+    margin-left: 8px;
+    font-family: var(--Montserrat);
+}
+.w3-bar .nav-item .w3-bar-item{
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .quantity-tab::before{
+    padding-top: 21px;
+    background-image: linear-gradient(90deg,rgb(172, 168, 168) 25%,rgba(172, 168, 168, 0) 0,rgba(172, 168, 168, 0));
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: 4px 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .quantity-tab select{
+    border: 2px solid #036016;
+    width:30%;
+}
+.single_menu .menu_content .modal .modal-content .modal-body .quantity-tab select:focus{
+    box-shadow: none;
+}
+.single_menu .menu_content .modal .modal-content .modal-footer button{
+    background-color: green;
+    color: white;
+    width: 50%;
 }
